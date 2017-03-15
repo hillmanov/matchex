@@ -1,6 +1,6 @@
 {
   "name": "matchex",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Scott Hillman",
   "license": "MIT",
@@ -8,5 +8,9 @@
     "chai": "^3.5.0",
     "lodash.after": "^4.0.4",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "lodash.isregexp": "^4.0.1",
+    "lodash.isstring": "^4.0.1"
   }
 }

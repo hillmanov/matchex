@@ -65,4 +65,14 @@ describe('Test functionality of matchex', () => {
     matchex.run('THIS IS A test');
   });
 
+  it('Should work with a regex literal', done => {
+    matchex.use(/Testing testing (.*)\s(.*)\s(.*)/, (all, first, second, third) => {
+      expect(first).to.equal('1');
+      expect(second).to.equal('2');
+      expect(third).to.equal('3');
+      done();
+    });
+    matchex.run('Testing testing 1 2 3');
+  });
+
 });
