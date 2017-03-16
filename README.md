@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/hillmanov/matchex.svg?branch=master)](https://travis-ci.org/hillmanov/matchex)[![Coverage Status](https://coveralls.io/repos/github/hillmanov/matchex/badge.svg)](https://coveralls.io/github/hillmanov/matchex)[![dependencies Status](https://david-dm.org/hillmanov/matchex/status.svg)](https://david-dm.org/hillmanov/matchex)
+[![Build Status](https://travis-ci.org/hillmanov/matchex.svg?branch=master)](https://travis-ci.org/hillmanov/matchex) [![Coverage Status](https://coveralls.io/repos/github/hillmanov/matchex/badge.svg)](https://coveralls.io/github/hillmanov/matchex) [![dependencies Status](https://david-dm.org/hillmanov/matchex/status.svg)](https://david-dm.org/hillmanov/matchex)
 
 # matchex
 Match regular expressions in a routers like way
