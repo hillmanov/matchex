@@ -1,4 +1,5 @@
 # matchex
+[![Build Status](https://travis-ci.org/hillmanov/matchex.svg?branch=master)](https://travis-ci.org/hillmanov/matchex)
 Match regular expressions in a routers like way
 
 # Usage: 
