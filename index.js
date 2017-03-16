@@ -11,22 +11,19 @@ Matchex.prototype.use = function(pattern, cb, options = { caseInsentive: false }
     regex = new RegExp(pattern, options.caseInsentive ? 'i' : '');
   } else if (isRegExp(pattern)) {
     regex = pattern;
+  } else {
+    throw new Error('Pattern must be a string or a regular expression');
   }
 
-  if (this.matchers.has(regex)) {
-    this.matchers.get(regex).push(cb);
-  }
-  this.matchers.set(regex, [cb]);
+  this.matchers.set(regex, cb);
   return this.matchers.get(regex);
 };
 
 Matchex.prototype.run = function(text) {
-  for (let [regex, cbs] of this.matchers.entries()) {
+  for (let [regex, cb] of this.matchers.entries()) {
     const match  = text.match(regex);
     if (match) {
-      cbs.forEach(cb => {
-        cb.apply(null, match);
-      });
+      cb.apply(null, match);
     }
   }
 };
