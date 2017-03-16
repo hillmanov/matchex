@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Scott Hillman",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "lodash.after": "^4.0.4",
